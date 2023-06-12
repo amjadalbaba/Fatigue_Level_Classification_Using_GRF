@@ -40,28 +40,28 @@ Please make sure to provide the correct directory path containing the GRF data a
 This function calculates the root mean square (RMS) of a given set of values. RMS is a measure of the average magnitude of a set of values and is commonly used in signal processing and data analysis. 
 
 #### Parameters:
-* `values` (array-like): An array or list of numerical values for which the RMS needs to be calculated.
+* `values` (array-like): an array or list of numerical values for which the RMS needs to be calculated.
 
 #### Returns:
-* `rms` (float): The root mean square value of the input values.
+* `rms` (float): the root mean square value of the input values.
 
 ### combine_subjects:
 This function combines all the subjects data into one dataframe and calculates various statistical measures for each feature. The statistical measures include mean, standard deviation, root mean square (RMS), skewness, kurtosis, interquartile range (IQR), mean absolute deviation (MAD), maximum value, zero-crossing count (ZCC), and range.
 
 #### Parameters:
-* `subjects` (list): A list of dictionaries representing the data for each subject and study.
+* `subjects` (list): a list of dictionaries representing the data for each subject and study.
 
 #### Returns:
-* `stats_vals` (list): A list of dictionaries containing the calculated statistical measures for each feature.
+* `stats_vals` (list): a list of dictionaries containing the calculated statistical measures for each feature.
 
 ### fatigue_level_labeling:
 This function labels the fatigue levels for the subjects based on specific records chosen for each level. It takes in a list of subjects statistical data and assigns a fatigue level label to specific records. Records 1 and 2 of each subject are assigned as level 1 fatigue, records 5 and 6 as level 2, and records 9 and 10 as level 3.
 
 #### Parameters:
-* `subjects_stats` (list): A list of pandas DataFrames containing the statistical data for each subject.
+* `subjects_stats` (list): a list of pandas DataFrames containing the statistical data for each subject.
 
 #### Returns:
-* `labeled_subjects` (list): A list of pandas DataFrames with fatigue level labels assigned to specific records.
+* `labeled_subjects` (list): a list of pandas DataFrames with fatigue level labels assigned to specific records.
 
 Notebook: data_organizing.ipynb
 
@@ -89,6 +89,8 @@ Notebook: data_organizing.ipynb
 We will then proceed with the development of a machine learning model that can effectively classify fatigue levels based on the selected features from the GRF data. Several classification algorithms such as RandomForestClassifier, Decision Tree, Naive Bayes, KNN, and lazypredict to try many different models on our data and output different metrics (Accuracy, F1 Score) will be explored and evaluated.
 
 Notebook: model_building.ipynb
+
+## Conclusion
 
 ## Supervision
 * [@Ramzi Halabi](https://github.com/RamziHalabi) 
