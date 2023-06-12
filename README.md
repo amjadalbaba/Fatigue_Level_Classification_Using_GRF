@@ -79,7 +79,7 @@ The RFE is a feature selection method that recursively eliminates less important
 
 At the end you will get:
 * ```support_``` (array-like): a boolean mask indicating the selected features.
-* ```ranking_``` (array-like): the feature ranking, where a lower value indicates higher ranking
+* ```ranking_``` (array-like): the feature ranking, where a lower value indicates higher ranking.
 
 Both methods gave roughly same values, the selected features to complete with were: ```['VGRF_skewness', 'VGRF_kurtosis', 'HGRF_skewness', 'HGRF_mad', 'LGRF_kurtosis', 'fatigue_level']```
 
