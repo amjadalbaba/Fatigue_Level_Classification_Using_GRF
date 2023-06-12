@@ -30,10 +30,10 @@ Functions developed:
 This function is designed to load ground reaction force (GRF) data from a specified directory path. It traverses through the subject  folders within the given path and extracts the desired features to build ten dataframes, one for each subject.
 
 #### Parameters:
-* `path`: a string representing the directory path where the GRF data is stored.
+* `path` (string): a string representing the directory path where the GRF data is stored.
 
 #### Returns:
-* `subjects`: a list of each subject's data frame.
+* `subjects` (list): a list of each subject's data frame.
 
 Please make sure to provide the correct directory path containing the GRF data as an argument when calling the load_grf function.
 
