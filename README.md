@@ -49,7 +49,7 @@ This function calculates the root mean square (RMS) of a given set of values. RM
 This function combines all the subjects data into one dataframe and calculates various statistical measures for each feature. The statistical measures include mean, standard deviation, root mean square (RMS), skewness, kurtosis, interquartile range (IQR), mean absolute deviation (MAD), maximum value, zero-crossing count (ZCC), and range.
 
 #### Parameters:
-* `subjects` (list): a list of dictionaries representing the data for each subject and study.
+* `subjects` (list): a list of each subject's data frame.
 
 #### Returns:
 * `stats_vals` (list): a list of dictionaries containing the calculated statistical measures for each feature.
