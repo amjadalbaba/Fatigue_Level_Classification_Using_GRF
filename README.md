@@ -7,6 +7,7 @@ This project aims to develop a machine learning model for classifying fatigue le
 *  Data Collection
 *  Exploratory Data Analysis (EDA)
 *  Data Consolidation & Feature Extraction
+*  Fatigue Level Labeling
 *  Feature Selection
 *  Model Building
 
@@ -23,7 +24,7 @@ Notebook: EDA.ipynb
 ## Data Consolidation & Feature Extraction
 Once the GRF data is collected, we will apply feature extraction techniques to derive meaningful characteristics from the raw data. These features may include statistical measures, frequency domain analysis, or time-domain parameters that capture important aspects of the GRF patterns. Additionally, feature selection methods will be employed to identify the most relevant features that contribute to fatigue level classification.
 
-Functions Developed:
+Functions developed:
 
 ### load_grf:
 This function is designed to load ground reaction force (GRF) data from a specified directory path. It traverses through the subject  folders within the given path and extracts the desired features to build ten dataframes, one for each subject.
@@ -54,8 +55,14 @@ This function combines all the subjects data into one dataframe and calculates v
 #### Returns:
 * `stats_vals` (list): a list of dictionaries containing the calculated statistical measures for each feature.
 
+Notebook: data_organizing.ipynb
+
+## Fatigue Level Labeling
+Labeling the fatigue levels for the subjects based on specific records chosen for each level. It takes in a list of subjects statistical data and assigns a fatigue level label to specific records. Records 1 and 2 of each subject are assigned as level 1 fatigue, records 5 and 6 as level 2, and records 9 and 10 as level 3.
+
+Function developed:
+
 ### fatigue_level_labeling:
-This function labels the fatigue levels for the subjects based on specific records chosen for each level. It takes in a list of subjects statistical data and assigns a fatigue level label to specific records. Records 1 and 2 of each subject are assigned as level 1 fatigue, records 5 and 6 as level 2, and records 9 and 10 as level 3.
 
 #### Parameters:
 * `subjects_stats` (list): a list of pandas DataFrames containing the statistical data for each subject.
