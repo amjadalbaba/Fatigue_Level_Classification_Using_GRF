@@ -77,7 +77,7 @@ The Feature Importances with a Forest of Trees in scikit-learn is used to evalua
 ### Recursive Feature Elimination (RFE)
 The RFE is a feature selection method that recursively eliminates less important features based on their ranking, allowing for the selection of the most relevant features for a given task. RFE is useful for reducing the dimensionality of datasets, improving model performance, and enhancing interpretability.
 
-At the end you will get:
+At the end we will get:
 * ```support_``` (array-like): a boolean mask indicating the selected features.
 * ```ranking_``` (array-like): the feature ranking, where a lower value indicates higher ranking.
 
