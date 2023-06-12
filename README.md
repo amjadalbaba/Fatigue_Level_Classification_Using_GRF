@@ -28,13 +28,40 @@ Functions Developed:
 ### load_grf:
 This function is designed to load ground reaction force (GRF) data from a specified directory path. It traverses through the subject  folders within the given path and extracts the desired features to build ten dataframes, one for each subject.
 
+#### Parameters:
+* `path`: a string representing the directory path where the GRF data is stored.
+
+#### Returns:
+* `subjects`: a list of each subject's data frame.
+
 Please make sure to provide the correct directory path containing the GRF data as an argument when calling the load_grf function.
+
+### rms_calculation:
+This function calculates the root mean square (RMS) of a given set of values. RMS is a measure of the average magnitude of a set of values and is commonly used in signal processing and data analysis. 
+
+#### Parameters:
+* `values` (array-like): An array or list of numerical values for which the RMS needs to be calculated.
+
+#### Returns:
+* `rms` (float): The root mean square value of the input values.
 
 ### combine_subjects:
 This function combines all the subjects data into one dataframe and calculates various statistical measures for each feature. The statistical measures include mean, standard deviation, root mean square (RMS), skewness, kurtosis, interquartile range (IQR), mean absolute deviation (MAD), maximum value, zero-crossing count (ZCC), and range.
 
+#### Parameters:
+* `subjects` (list): A list of dictionaries representing the data for each subject and study.
+
+#### Returns:
+* `stats_vals` (list): A list of dictionaries containing the calculated statistical measures for each feature.
+
 ### fatigue_level_labeling:
 This function labels the fatigue levels for the subjects based on specific records chosen for each level. It takes in a list of subjects statistical data and assigns a fatigue level label to specific records. Records 1 and 2 of each subject are assigned as level 1 fatigue, records 5 and 6 as level 2, and records 9 and 10 as level 3.
+
+#### Parameters:
+* `subjects_stats` (list): A list of pandas DataFrames containing the statistical data for each subject.
+
+#### Returns:
+* `labeled_subjects` (list): A list of pandas DataFrames with fatigue level labels assigned to specific records.
 
 Notebook: data_organizing.ipynb
 
