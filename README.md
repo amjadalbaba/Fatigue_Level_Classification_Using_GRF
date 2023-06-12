@@ -98,6 +98,7 @@ We will then proceed with the development of a machine learning model that can e
 Notebook: model_building.ipynb
 
 ## Conclusion
+In this fatigue level classification project using time series data analysis, we encountered challenges related to limited data availability, which resulted in lower accuracy for the machine learning models. Despite the limitations, several insights and findings can be highlighted.
 
 ## Supervision
 * [@Ramzi Halabi](https://github.com/RamziHalabi) 
